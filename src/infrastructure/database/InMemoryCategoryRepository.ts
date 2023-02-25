@@ -3,7 +3,7 @@ import crypto from "crypto";
 import { CategoryCollection } from "../../domain/category/Category";
 import { CategoryRepository } from "../../domain/category/CategoryRepository";
 
-const makeCategoryRepository = (): CategoryRepository => {
+export const makeCategoryRepository = (): CategoryRepository => {
 	const categories: CategoryCollection = [];
 
 	return {
@@ -21,4 +21,4 @@ const makeCategoryRepository = (): CategoryRepository => {
 	};
 };
 
-export { makeCategoryRepository };
+export const categoryRepository = makeCategoryRepository();
