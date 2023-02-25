@@ -6,14 +6,17 @@
 	"author": "Pedro Ramos <pedroramos.contato@outlook.com>",
 	"license": "MIT",
 	"scripts": {
-		"test": "mocha"
+		"test": "mocha",
+		"test:watch": "mocha --watch"
 	},
 	"devDependencies": {
 		"@types/chai": "^4.3.4",
+		"@types/chai-as-promised": "^7.1.5",
 		"@types/mocha": "^10.0.1",
 		"@types/node": "^18.14.1",
 		"@typescript-eslint/eslint-plugin": "^5.53.0",
 		"chai": "^4.3.7",
+		"chai-as-promised": "^7.1.1",
 		"eslint": "^8.34.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-prettier": "^4.2.1",
