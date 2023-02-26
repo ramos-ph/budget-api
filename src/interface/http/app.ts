@@ -2,6 +2,7 @@ import express from "express";
 import { router } from "./router";
 
 import { container } from "../../container";
+import { errorHandler } from "./errorHandler";
 
 const makeApp = () => {
 	const app = express();
@@ -12,6 +13,8 @@ const makeApp = () => {
 	});
 	app.use(express.json());
 	app.use(router());
+
+	app.use(errorHandler);
 
 	return app;
 };
