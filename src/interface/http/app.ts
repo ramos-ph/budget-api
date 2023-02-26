@@ -1,7 +1,9 @@
-import express, { Request } from "express";
+import express from "express";
 import { router } from "./router";
 
-const makeApp = ({ container }: { container: Request["container"] }) => {
+import { container } from "../../container";
+
+const makeApp = () => {
 	const app = express();
 
 	app.use((req, _, next) => {
