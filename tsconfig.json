@@ -9,6 +9,9 @@
 		"forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
 		"alwaysStrict": true /* Ensure 'use strict' is always emitted. */
 	},
+	"ts-node": {
+		"transpileOnly": true
+	},
 	"exclude": ["node_modules", "./src/**/test"],
 	"include": ["knexfile.ts", "./src/**/*.ts"]
 }
