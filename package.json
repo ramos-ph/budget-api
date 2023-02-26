@@ -8,8 +8,8 @@
 	"scripts": {
 		"start": "node dist/bin/server.js",
 		"start:dev": "nodemon --watch 'src' -e ts --exec 'ts-node -T src/bin/server.ts'",
-		"test": "mocha",
-		"test:watch": "mocha --watch",
+		"test": "NODE_ENV=test mocha",
+		"test:watch": "NODE_ENV=test mocha --watch",
 		"migration:run": "knex migrate:latest",
 		"migration:rollback": "knex migrate:rollback",
 		"migration:rollback:all": "knex migrate:rollback --all"
