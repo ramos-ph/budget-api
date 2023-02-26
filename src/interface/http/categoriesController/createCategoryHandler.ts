@@ -1,12 +1,11 @@
 import { RequestHandler } from "express";
 
 import { makeCreateCategory } from "../../../application/categories/use-cases/CreateCategory";
-import { categoryRepository } from "../../../infrastructure/database/InMemoryCategoryRepository";
 
 export const createCategoryHandler: RequestHandler = async (req, res) => {
 	const { name, description, monthly_limit } = req.body;
 
-	const createCategory = makeCreateCategory({ categoryRepository });
+	const createCategory = makeCreateCategory(req.container);
 
 	try {
 		const categories = await createCategory({
