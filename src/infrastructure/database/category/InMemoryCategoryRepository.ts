@@ -1,7 +1,7 @@
 import crypto from "crypto";
 
-import { CategoryCollection } from "../../domain/category/Category";
-import { CategoryRepository } from "../../domain/category/CategoryRepository";
+import { CategoryCollection } from "../../../domain/category/Category";
+import { CategoryRepository } from "../../../domain/category/CategoryRepository";
 
 export const makeCategoryRepository = (): CategoryRepository => {
 	const categories: CategoryCollection = [];

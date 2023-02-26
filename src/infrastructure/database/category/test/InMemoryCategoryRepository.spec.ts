@@ -1,6 +1,6 @@
 import { expect } from "chai";
 
-import { CategoryRepository } from "../../../domain/category/CategoryRepository";
+import { CategoryRepository } from "../../../../domain/category/CategoryRepository";
 import { makeCategoryRepository } from "../InMemoryCategoryRepository";
 
 describe("InMemoryCategoryRepository", () => {

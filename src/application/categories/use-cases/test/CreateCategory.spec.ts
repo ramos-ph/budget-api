@@ -3,7 +3,7 @@ import chaiAsPromised from "chai-as-promised";
 
 import { Category } from "../../../../domain/category/Category";
 import { CreateCategoryProps, makeCreateCategory } from "../CreateCategory";
-import { makeCategoryRepository } from "../../../../infrastructure/database/InMemoryCategoryRepository";
+import { makeCategoryRepository } from "../../../../infrastructure/database/category/InMemoryCategoryRepository";
 
 chai.use(chaiAsPromised);
 

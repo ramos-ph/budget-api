@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { CategoryCollection } from "../../../../domain/category/Category";
 import { CategoryRepository } from "../../../../domain/category/CategoryRepository";
 
-import { makeCategoryRepository } from "../../../../infrastructure/database/InMemoryCategoryRepository";
+import { makeCategoryRepository } from "../../../../infrastructure/database/category/InMemoryCategoryRepository";
 import { makeListCategories } from "../ListCategories";
 
 describe("List Categories Use Case", () => {
