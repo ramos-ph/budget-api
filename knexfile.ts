@@ -16,6 +16,7 @@ const config: { [key: string]: Knex.Config } = {
 				"migrations"
 			),
 		},
+		useNullAsDefault: true,
 	},
 };
 
